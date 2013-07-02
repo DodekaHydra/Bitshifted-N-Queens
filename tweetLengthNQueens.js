@@ -1,0 +1,1 @@
+NQ=function(n){var s=0,Q=function(r,b,d,f){for(var c=1;c<1<<n;c*=2){if(!((d|b|f)&c))if(r+1<n)Q(r+1,b+c>>1,d+c,f+c<<1);else s++}};Q(0,0,0,0)}

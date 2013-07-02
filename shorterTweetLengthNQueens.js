@@ -1,0 +1,1 @@
+NQ=function(n,r,b,d,f){var s=0;for(var c=1;c<1<<n;c*=2){if(!((d|b|f)&c))s+=r+1<n?NQ(n,r+1,b+c>>1,d+c,f+c<<1):1}return s}
